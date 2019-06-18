@@ -10,7 +10,7 @@
 
 #
 调用 `login()` 和 `is_login()` 方法时，必须设置一项 cookie —— `RAIL_DEVICEID`。  
-获取 `RAIL_DEVICEID` 最快捷的方式时用浏览器打开任意一个 12306 站点（如：https://www.12306.cn/index/index.html），然后在 12306.cn 域名中获得此 cookie。  
+获取 `RAIL_DEVICEID` 最快捷的方式时用浏览器打开任意一个 12306 站点（如：https://www.12306.cn/index/index.html ），然后在 12306.cn 域名中获得此 cookie。  
 也可以通过抓包，查看 .js 文件，自己构造请求参数，向 https://kyfw.12306.cn/otn/HttpZF/logdevice 发送 QueryString，获取到的 json 文件中的 'dfp' 项即可作为 `RAIL_DEVICEID`。
 
 #
