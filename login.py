@@ -118,7 +118,7 @@ class XX12306:
 
     def login(self, username, password):
         self.session.cookies.update({
-            'RAIL_DEVICEID': 'UB_YPPl2eqm67m7qb5gO94qDunov_zXkUjVBnT9xSUxUQ5N1bhc8KBFm0t_KaZ1T-GvG-zDvQyRiCRysTeW4Pof3ZwyDv64H9lstE3ht_n9QKEkRZmQwfgValcEWSVXydcmd_xuRxfrLX8n5ryxVtL2e0RtAcWnq'
+            'RAIL_DEVICEID': ''  # 获取方法见 README.md
         })
 
         use_lbl = self.is_useable_littlbigluo()
@@ -237,6 +237,6 @@ if __name__ == '__main__':
     client = XX12306()
     # client.login_by_chromdriver(username, password)
     client.login(username, password)
-    # client.set_cookie_tk('IVD01YrtcAZShiRho9zSvr5gk8OBA4T7duURTgcgz1z0')
+    # client.set_cookie_tk('')
     # print(client.is_login())
     print(client.get_user_info())
